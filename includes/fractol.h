@@ -6,7 +6,7 @@
 /*   By: maxim <maxim@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/26 14:51:35 by maxim             #+#    #+#             */
-/*   Updated: 2020/10/19 21:18:13 by maxim            ###   ########.fr       */
+/*   Updated: 2020/10/19 21:46:42 by maxim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,5 +52,6 @@ t_comp_nbr		comp_nbr_pow(t_comp_nbr nbr);
 int				calc_iter_mand(t_mlx mlx, int x, int y);
 int				mouse_hook(int button, int x, int y, t_mlx *mlx);
 void			draw_fractal(t_mlx *mlx);
+void			mlx_start(t_mlx *mlx);
 
 #endif
