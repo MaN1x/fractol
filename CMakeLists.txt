@@ -74,7 +74,7 @@ include_directories(includes minilibx-linux libft/includes)
 
 add_library(libft STATIC ${SOURCE_LIBFT})
 
-add_executable(fractol src/main.c includes/fractol.h src/put_pixel_to_image.c src/complex_number.c src/calc_pixel_in_fract_mand.c)
+add_executable(fractol src/main.c includes/fractol.h src/put_pixel_to_image.c src/complex_number.c src/calc_pixel_in_fract_mand.c src/draw_fractal.c src/hooks.c)
 
 target_link_directories(fractol PRIVATE minilibx-linux)
 
