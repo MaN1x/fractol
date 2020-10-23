@@ -12,16 +12,15 @@
 
 #include "fractol.h"
 #include <math.h>
-#include <stdio.h>
 
-int calc_iter_mand(t_mlx mlx, int x, int y)
+int calc_iter_mand(t_fractal fractal, int x, int y)
 {
 	t_comp_nbr	point;
 	t_comp_nbr	z;
 	int			i;
 
 	i = 0;
-	point = init_comp_nbr(mlx.min_re + mlx.factor_x * x, mlx.min_im + mlx.factor_y * y);
+	point = init_comp_nbr(fractal.min_re + fractal.factor_x * x, fractal.min_im + fractal.factor_y * y);
 	z = init_comp_nbr(0, 0);
 
 	while (i < MAX_ITERATIONS)

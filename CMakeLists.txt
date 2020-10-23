@@ -78,4 +78,6 @@ add_executable(fractol src/main.c includes/fractol.h src/put_pixel_to_image.c sr
 
 target_link_directories(fractol PRIVATE minilibx-linux)
 
-target_link_libraries(fractol  libft mlx Xext X11 m)
+target_link_libraries(fractol  libft mlx Xext X11 m pthread)
+
+add_compile_options(03)
